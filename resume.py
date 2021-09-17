@@ -87,13 +87,15 @@ exp_4_kp2 = "Elaboration of bidding documentation in accordance to IBRD norms an
 # Projects
 proj_heading = "PROJECTS/PUBLICATIONS"
 
-proj_1_title = "EDA on Argentine lakes dataset"
+proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
 proj_1_tech = "Python / Seaborn / EDA / CSV / DataViz"
-proj_1_comment = "Polished, visualized and interpreted resultes of Argentine lakes dataset."
+proj_1_comment_1 = "Polished, visualized and interpreted resultes of Argentine lakes dataset."
+proj_1_comment_2 = "Obtained Carlson's trophic state index (TSI) for waterboides and presented relevant analysis."
 
 proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
 proj_2_tech = "QGIS / GRASS"
-proj_2_comment = "Polished, visualized and interpreted resultes of Argentine lakes dataset."
+proj_2_comment_1 = "Developed map of Chimehuín river basin using processed DEM, with lakes and watercourses marked on it."
+proj_2_comment_2 = "Created as part of dissertation about exotic willow (Salix fragilis) invasion of patagonian rivers."
 
 
 # ARMADO DE PDF
@@ -170,7 +172,9 @@ pdf.ln(5)
 pdf.set_font("Ubuntu Light", "", 8)
 pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_tech))
 pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment))
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_1))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_2))
 
 pdf.ln(8)
 
@@ -180,7 +184,9 @@ pdf.ln(5)
 pdf.set_font("Ubuntu Light", "", 8)
 pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_tech))
 pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment))
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_1))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_2))
 
 pdf.ln(15)
 
