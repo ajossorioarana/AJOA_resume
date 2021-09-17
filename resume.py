@@ -5,7 +5,7 @@ from fpdf import FPDF
 # Contact and general info
 header  = ">>>This resume was generated entirely in Python. For full sourcecode, view my portfolio."
 name = "Arturo J. Ossorio Arana"
-role = "Data Science and Analytics - Ecohidrologist"
+role = "Ecohidrologist - Data Science and Analytics"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
@@ -22,12 +22,23 @@ skills = [
         "Matplotlib",
         "Seaborn",
         "SQL",
-        "Bigquery",
+        "BigQuery",
         "Git & GitHub",
         "MS Excel",
         "Power BI",
         "QGIS",
         "GRASS"
+        ]
+
+# Areas of interest
+interests = [
+        "Data Science",
+        "Data Analytics",
+        "Remote Sensing",
+        "Hydrology",
+        "Ecohydrology",
+        "Limnology",
+        "Hydraulics"
         ]
 
 # Education
@@ -49,8 +60,8 @@ exp_1_company = "EcoAqua"
 exp_1_company_link = "https://ecoaqua.com.ar/"
 exp_1_period = "Feb. 2020 - Present"
 exp_1_kp1 = "Diagnosed and treated customer's lakes for algae, weeds and water quality issues."
-exp_1_kp2 = "Implemented new budgeting process, based on technical demans of client's waterbody, incresing revenue by > 30%."
-exp_1_kp3 = "Worked together with COO, improving KPI performance, mainly refearing to "
+exp_1_kp2 = "Implemented new budgeting process, based on limnological factors, incresing revenue by > 30%."
+exp_1_kp3 = "Worked together with COO, improving KPI performance, mainly client retention rate."
 
 exp_2_role = "Aquatic Specialitst"
 exp_2_company = "EcoAqua"
@@ -70,9 +81,8 @@ exp_3_kp3 = "Syllabus: Pressurized pipe flow, pump selection, water hammer, open
 exp_4_role = "Bid/Tender Assistant"
 exp_4_company = "Buenos Aires City Government"
 exp_4_period = "Jun. 2016 - May. 2017"
-exp_4_kp1 = "Assigned to  IBRD-loan (> $145M)"
-exp_4_kp2 = "Second keypoint and comment."
-exp_4_kp3 = "Third keypoint and comment."
+exp_4_kp1 = "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel > $145M)."
+exp_4_kp2 = "Elaboration of bidding documentation in accordance to IBRD norms and recommendations."
 
 # Projects
 proj_heading = "PROJECTS/PUBLICATIONS"
@@ -81,8 +91,8 @@ proj_1_title = "EDA on Argentine lakes dataset"
 proj_1_tech = "Python / Seaborn / EDA / CSV / DataViz"
 proj_1_comment = "Polished, visualized and interpreted resultes of Argentine lakes dataset."
 
-proj_2_title = "EDA on Argentine lakes dataset"
-proj_2_tech = "Python / Seaborn / EDA / CSV / DataViz"
+proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
+proj_2_tech = "QGIS / GRASS"
 proj_2_comment = "Polished, visualized and interpreted resultes of Argentine lakes dataset."
 
 
@@ -98,7 +108,7 @@ width_first = 130
 h_cells = 10
 
 
-# HEADER, NAME AND ROLE
+# NAME AND ROLE
 pdf.ln(5)
 pdf.set_text_color(0, 0, 0)
 pdf.set_font("Ubuntu Medium", "", 18)
@@ -118,6 +128,7 @@ pdf.set_line_width(60)
 pdf.set_draw_color(30, 80, 125)
 pdf.line((width_first + 45), 40, (width_first + 45), 260)
 
+# Contact information
 pdf.set_text_color(255, 255, 255)
 pdf.set_font("Ubuntu Medium", "", 10)
 pdf.text(width_first + 19, 20, txt=city)
@@ -127,6 +138,20 @@ pdf.text(width_first + 19, 40, txt=cellphone)
 pdf.text(width_first + 19, 45, txt=linkedin)
 pdf.text(width_first + 19, 50, txt=github)
 pdf.text(width_first + 19, 60, txt=website)
+
+# Skills
+pdf.set_font("Ubuntu Medium", "", 10)
+pdf.text(width_first + 19, 80, txt="Skills:")
+pdf.set_font("Ubuntu Medium", "", 8)
+for i in range(len(skills)):
+        pdf.text(width_first + 20, (85 + i*5), txt=("+ " + skills[i]))
+
+pdf.set_font("Ubuntu Medium", "", 10)
+aux_depth = 85 + len(skills)*5 + 20
+pdf.text(width_first + 19, aux_depth, txt="Areas of interest:")
+pdf.set_font("Ubuntu Medium", "", 8)
+for i in range(len(interests)):
+        pdf.text(width_first + 20, (aux_depth + 5 + i*5), txt=("+ " + interests[i]))
 
 
 
@@ -223,8 +248,6 @@ pdf.set_font("Ubuntu Light", "", 8)
 pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(exp_4_kp1))
 pdf.ln(5)
 pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(exp_4_kp2))
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(exp_4_kp3))
 
 pdf.ln(15)
 
@@ -262,4 +285,4 @@ pdf.set_font("Ubuntu Light", "I", 9)
 pdf.text(10, 285, txt=header)
 
 
-pdf.output("Resume.pdf", "F")
+pdf.output("AJOA_Resume.pdf", "F")
