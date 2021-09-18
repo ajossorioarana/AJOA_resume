@@ -5,14 +5,18 @@ from fpdf import FPDF
 # Contact and general info
 header  = ">>>This resume was generated entirely in Python. For full sourcecode, view my portfolio."
 name = "Arturo J. Ossorio Arana"
-role = "Ecohidrologist - Data Science and Analytics"
+role = "Ecohydrologist - Data Scientist"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
 cellphone = "+54 9 11 3636823"
-linkedin = "linkedin.com/in/ajossorioarana"
-github = "github.com/ajossorioarana"
+linkedin = "LinkedIn: /in/ajossorioarana"
+github = "GitHub: /ajossorioarana"
 website = "ajossorioarana.github.io"
+
+desc_ln1 = "Ecohydrologist geared towards data science, with an analytical background and experience working with"
+desc_ln2 = "stakeholders and managing teams. Currently increasing mastery in Machine Learning. I will be uploading"
+desc_ln3 = "related content through my GitHub account and website."
 
 # Skills
 skills = [
@@ -106,7 +110,7 @@ pdf.add_font("Ubuntu Medium", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windo
 pdf.add_font("Ubuntu Bold", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Bold.ttf", uni=True)
 pdf.add_page()
 
-width_first = 130
+width_first = 150
 h_cells = 10
 
 
@@ -121,74 +125,49 @@ pdf.set_font("Ubuntu Light", "", 16)
 pdf.cell(w=width_first, h = h_cells, txt=role)
 pdf.set_line_width(0.5)
 
-pdf.ln(17)
+pdf.ln(12)
 
 pdf.set_fill_color(215, 215, 255)
 pdf.line(10, 37, width_first + 10, 37)
+pdf.set_font("Ubuntu Light", "", 9)
+pdf.cell(w=width_first, h = h_cells, txt=desc_ln1)
+pdf.ln(6)
+pdf.cell(w=width_first, h = h_cells, txt=desc_ln2)
+pdf.ln(6)
+pdf.cell(w=width_first, h = h_cells, txt=desc_ln3)
+pdf.ln(13)
+pdf.line(10, 59, width_first + 10, 59)
 
-pdf.set_line_width(60)
+pdf.set_line_width(43)
 pdf.set_draw_color(30, 80, 125)
-pdf.line((width_first + 45), 40, (width_first + 45), 260)
+pdf.line((width_first + 35), 30, (width_first + 35), 270)
 
 # Contact information
 pdf.set_text_color(255, 255, 255)
-pdf.set_font("Ubuntu Medium", "", 10)
-pdf.text(width_first + 19, 20, txt=city)
-pdf.text(width_first + 19, 25, txt=prov_country)
-pdf.text(width_first + 19, 35, txt=mail)
-pdf.text(width_first + 19, 40, txt=cellphone)
-pdf.text(width_first + 19, 45, txt=linkedin)
-pdf.text(width_first + 19, 50, txt=github)
-pdf.text(width_first + 19, 60, txt=website)
+pdf.set_font("Ubuntu Medium", "", 8)
+pdf.text(width_first + 17.5, 20, txt=city)
+pdf.text(width_first + 17.5, 25, txt=prov_country)
+pdf.text(width_first + 17.5, 35, txt=mail)
+pdf.text(width_first + 17.5, 40, txt=cellphone)
+pdf.text(width_first + 17.5, 45, txt=linkedin)
+pdf.text(width_first + 17.5, 50, txt=github)
+pdf.text(width_first + 17.5, 60, txt=website)
 
 # Skills
 pdf.set_font("Ubuntu Medium", "", 10)
-pdf.text(width_first + 19, 80, txt="Skills:")
+pdf.text(width_first + 17.5, 80, txt="Skills:")
 pdf.set_font("Ubuntu Medium", "", 8)
 for i in range(len(skills)):
         pdf.text(width_first + 20, (85 + i*5), txt=("+ " + skills[i]))
 
 pdf.set_font("Ubuntu Medium", "", 10)
 aux_depth = 85 + len(skills)*5 + 20
-pdf.text(width_first + 19, aux_depth, txt="Areas of interest:")
+pdf.text(width_first + 17.5, aux_depth, txt="Areas of interest:")
 pdf.set_font("Ubuntu Medium", "", 8)
 for i in range(len(interests)):
         pdf.text(width_first + 20, (aux_depth + 5 + i*5), txt=("+ " + interests[i]))
 
 
-
-# PROJECTS 
-
-pdf.set_font("Ubuntu Bold", "", 12)
-pdf.set_text_color(30, 80, 125)
-pdf.cell(w=width_first, h = (h_cells - 2), txt=proj_heading, fill=True)
-pdf.ln(8)
-
-pdf.set_text_color(0, 0, 0)
-
-pdf.set_font("Ubuntu Medium", "", 10)
-pdf.cell(w=width_first, h = h_cells, txt=proj_1_title)
-pdf.ln(5)
-pdf.set_font("Ubuntu Light", "", 8)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_tech))
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_1))
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_2))
-
-pdf.ln(8)
-
-pdf.set_font("Ubuntu Medium", "", 10)
-pdf.cell(w=width_first, h = h_cells, txt=proj_2_title)
-pdf.ln(5)
-pdf.set_font("Ubuntu Light", "", 8)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_tech))
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_1))
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_2))
-
-pdf.ln(15)
 
 # EXPERIENCE
 
@@ -255,7 +234,7 @@ pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(exp_4_kp1))
 pdf.ln(5)
 pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(exp_4_kp2))
 
-pdf.ln(15)
+pdf.ln(10)
 
 # EDUCATION
 
@@ -269,26 +248,55 @@ pdf.set_text_color(0, 0, 0)
 pdf.set_font("Ubuntu Medium", "", 10)
 pdf.cell(w=width_first, h = h_cells, txt=edu_1_title)
 pdf.ln(5)
-pdf.set_font("Ubuntu Light", "", 10)
-pdf.cell(w=width_first, h = h_cells, txt=edu_1_place)
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt=edu_1_grad_date)
+pdf.set_font("Ubuntu Light", "", 9)
+pdf.cell(w=width_first, h = h_cells, txt=(edu_1_place + " - " + edu_1_grad_date))
 
 pdf.ln(8)
 
 pdf.set_font("Ubuntu Medium", "", 10)
 pdf.cell(w=width_first, h = h_cells, txt=edu_2_title)
 pdf.ln(5)
-pdf.set_font("Ubuntu Light", "", 10)
-pdf.cell(w=width_first, h = h_cells, txt=edu_2_place)
-pdf.ln(5)
-pdf.cell(w=width_first, h = h_cells, txt=edu_2_grad_date)
+pdf.set_font("Ubuntu Light", "", 9)
+pdf.cell(w=width_first, h = h_cells, txt=(edu_2_place + " - " + edu_2_grad_date))
 
 pdf.ln(10)
 
-pdf.set_text_color(100, 100, 100)
-pdf.set_font("Ubuntu Light", "I", 9)
-pdf.text(10, 285, txt=header)
 
+# PROJECTS 
+
+pdf.set_font("Ubuntu Bold", "", 12)
+pdf.set_text_color(30, 80, 125)
+pdf.cell(w=width_first, h = (h_cells - 2), txt=proj_heading, fill=True)
+pdf.ln(8)
+
+pdf.set_text_color(0, 0, 0)
+
+pdf.set_font("Ubuntu Medium", "", 10)
+pdf.cell(w=width_first, h = h_cells, txt=proj_1_title)
+pdf.ln(5)
+pdf.set_font("Ubuntu Light", "", 8)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_tech))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_1))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_1_comment_2))
+
+pdf.ln(8)
+
+pdf.set_font("Ubuntu Medium", "", 10)
+pdf.cell(w=width_first, h = h_cells, txt=proj_2_title)
+pdf.ln(5)
+pdf.set_font("Ubuntu Light", "", 8)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_tech))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_1))
+pdf.ln(5)
+pdf.cell(w=width_first, h = h_cells, txt="+ {0}".format(proj_2_comment_2))
+
+pdf.ln(9)
+
+pdf.set_text_color(100, 100, 100)
+pdf.set_font("Ubuntu Light", "I", 7)
+pdf.cell(w=width_first, h = h_cells-4, txt=header)
 
 pdf.output("AJOA_Resume.pdf", "F")
