@@ -2,13 +2,13 @@ from fpdf import FPDF
 
 
 def write_header(header_title: str, width: int, height: int):
-        pdf.set_font("Ubuntu Bold", "", 12)
+        pdf.set_font("Ubuntu Bold", "", 11)
         pdf.set_text_color(0, 0, 0)
         #pdf.set_draw_color(232,212,148)
         pdf.set_draw_color(62, 171, 134)
         pdf.set_line_width(0.3)
         pdf.cell(w=width, h = height, txt=header_title, border="B", fill=False)
-        pdf.ln(8)
+        pdf.ln(7)
 
 def write_exp(company: str, role: str, link: str, period: str, place: str, keypoints: list, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
@@ -51,7 +51,7 @@ def write_project(title: str, keypoints: list, width: int, height: int):
 # TEXT VARIABLES
 
 # Contact and general info
-header  = ">>>This resume was generated entirely in Python. For full sourcecode, view my portfolio."
+footnote  = ">>> This resume was generated entirely in Python. For full sourcecode, view my portfolio."
 name = "Arturo J. Ossorio Arana"
 role = "Ecohydrologist - Data Scientist"
 city = "San Martín de los Andes"
@@ -62,8 +62,8 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-desc = "Ecohydrologist geared towards data science, with an analytical background and experience working with stakeholders and managing teams. Currently increasing mastery in Machine Learning. I will be uploading related content through my GitHub account and website."
-
+desc_1 = "I’m Arturo and I’m an ecohydrologist strolling the road towards identifying myself as a data scientist. I have a BEng in Civil Engineering and besides having and analytical background I’ve experience working with diverse stakeholders and managing teams."
+desc_2 = "I’m a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
 
 # Skills
 skills = [
@@ -206,7 +206,9 @@ pdf.ln(8)
 write_header("ABOUT ME", width, h_cells)
 pdf.ln(1)
 pdf.set_font("Ubuntu Light", "", 9)
-pdf.write(h=h_cells - 1, txt=desc)
+pdf.write(h=h_cells - 1, txt=desc_1)
+pdf.ln(7)
+pdf.write(h=h_cells - 1, txt=desc_2)
 pdf.ln(8)
 
 
@@ -233,12 +235,11 @@ write_project(proj_1_title, proj_1_keypoints, width, h_cells)
 write_project(proj_2_title, proj_2_keypoints, width, h_cells)
 
 
-# Footer
+# Footnote
 
-pdf.ln(3)
 pdf.set_text_color(100, 100, 100)
 pdf.set_font("Ubuntu Light", "I", 7)
-pdf.cell(w=width, h=h_cells-4, txt=header)
+pdf.text(x=10, y=280, txt=footnote)
 
 
 # Export as PDF
