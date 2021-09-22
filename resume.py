@@ -62,8 +62,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-desc_1 = "I’m Arturo and I’m an ecohydrologist strolling the road towards identifying myself as a data scientist. I have a BEng in Civil Engineering and besides having and analytical background I’ve experience working with diverse stakeholders and managing teams."
-desc_2 = "I’m a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
+description = "I’m Arturo and I’m an ecohydrologist strolling the road towards identifying myself as a data scientist. I have a BEng in Civil Engineering and besides having and analytical background I’ve experience working with diverse stakeholders and managing teams. I’m a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
 
 # Skills
 skills = [
@@ -171,6 +170,7 @@ pdf.add_font("Ubuntu Light", "I", r"C:\Users\aoa91\AppData\Local\Microsoft\Windo
 pdf.add_font("Ubuntu Medium", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Medium.ttf", uni=True)
 pdf.add_font("Ubuntu Bold", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Bold.ttf", uni=True)
 pdf.add_page()
+pdf.set_auto_page_break(True, margin=1)
 
 width = 189
 h_cells = 6
@@ -196,8 +196,6 @@ pdf.write(h_cells, cellphone)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h_cells, linkedin, link=linkedin)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
-pdf.write(h_cells, github, link=github)
-pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h_cells, website, link=website)
 pdf.ln(8)
 
@@ -206,9 +204,7 @@ pdf.ln(8)
 write_header("ABOUT ME", width, h_cells)
 pdf.ln(1)
 pdf.set_font("Ubuntu Light", "", 9)
-pdf.write(h=h_cells - 1, txt=desc_1)
-pdf.ln(7)
-pdf.write(h=h_cells - 1, txt=desc_2)
+pdf.write(h=h_cells - 1, txt=description)
 pdf.ln(8)
 
 
@@ -239,7 +235,8 @@ write_project(proj_2_title, proj_2_keypoints, width, h_cells)
 
 pdf.set_text_color(100, 100, 100)
 pdf.set_font("Ubuntu Light", "I", 7)
-pdf.text(x=10, y=280, txt=footnote)
+pdf.set_xy(x=10, y=280)
+pdf.write(h=h_cells - 2, txt=footnote, link=github)
 
 
 # Export as PDF
