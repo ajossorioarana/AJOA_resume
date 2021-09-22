@@ -13,7 +13,7 @@ def write_header(header_title: str, width: int, height: int):
 def write_exp(company: str, role: str, link: str, period: str, place: str, keypoints: list, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
         pdf.set_text_color(0, 25, 100)
-        pdf.cell(w=width, h=height, txt="{0} - {1}".format(company, role), link=link)
+        pdf.cell(w=width, h=height, txt="{0} - {1}".format(role, company), link=link)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
         pdf.set_font("Ubuntu Medium", "", 8)
@@ -31,7 +31,7 @@ def write_education(title: str, university: str, grad_date: str, width: int, hei
         pdf.cell(w=width, h=height, txt=title)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
-        pdf.set_font("Ubuntu Light", "", 8)
+        pdf.set_font("Ubuntu Light", "", 9)
         pdf.cell(w=width, h=height, txt=(university + " - " + grad_date))
         pdf.ln(8)
 
@@ -93,12 +93,12 @@ interests = [
 
 # Education info
 
-edu_1_title = "M.SC. in Ecohydrology"
-edu_1_place = "UNLP"
-edu_1_grad_date = "ABT, Expected Graduation Date: 2022"
+edu_1_title = "Master of Science MSc., Ecohydrology (Part-time)"
+edu_1_place = "Universidad Nacional de la Plata (UNLP)"
+edu_1_grad_date = "Thesis pending, Expected Graduation Date: 2022"
 
-edu_2_title = "Engineer's degree, Civil Engineer"
-edu_2_place = "UBA"
+edu_2_title = "Master of Engineering - MEng, Civil Engineer"
+edu_2_place = "Universidad de Buenos Aires (UBA)"
 edu_2_grad_date = "Graduated 2018"
 
 # Experience info
@@ -192,11 +192,11 @@ pdf.set_font("Ubuntu Medium", "", 8)
 pdf.set_text_color(0, 25, 100)
 pdf.write(h_cells, mail, link=mail)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
-pdf.write(h_cells, cellphone)
+pdf.write(h_cells, website, link=website)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h_cells, linkedin, link=linkedin)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
-pdf.write(h_cells, website, link=website)
+pdf.write(h_cells, cellphone)
 pdf.ln(8)
 
 # DESCRIPTION
