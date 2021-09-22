@@ -4,7 +4,6 @@ from fpdf import FPDF
 def write_header(header_title: str, width: int, height: int):
         pdf.set_font("Ubuntu Bold", "", 11)
         pdf.set_text_color(0, 0, 0)
-        #pdf.set_draw_color(232,212,148)
         pdf.set_draw_color(95, 130, 235)
         pdf.set_line_width(0.3)
         pdf.cell(w=width, h = height, txt=header_title, border="B", fill=False)
@@ -62,7 +61,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "I’m Arturo and I’m an ecohydrologist strolling the road towards identifying myself as a data scientist. I have a BEng in Civil Engineering and besides having and analytical background I’ve experience working with diverse stakeholders and managing teams. I’m a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
+description = "I am an ecohydrologist and data scientist. I have a MEng in Civil Engineering and besides having and analytical background I have experience working with diverse stakeholders and managing teams. I am a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
 
 # Skills
 skills = [
@@ -91,16 +90,6 @@ interests = [
         "Hydraulics"
         ]
 
-# Education info
-
-edu_1_title = "Master of Science MSc., Ecohydrology (Part-time)"
-edu_1_place = "Universidad Nacional de la Plata (UNLP)"
-edu_1_grad_date = "Thesis pending, Expected Graduation Date: 2022"
-
-edu_2_title = "Master of Engineering - MEng, Civil Engineer"
-edu_2_place = "Universidad de Buenos Aires (UBA)"
-edu_2_grad_date = "Graduated 2018"
-
 # Experience info
 
 exp_1_role = "Chief of Technical Department"
@@ -110,11 +99,11 @@ exp_1_period = "Feb. 2020 - Present"
 exp_1_place = "Buenos Aires, Argentina"
 exp_1_keypoints = [
                 "Diagnosed and treated customer's lakes for algae, weeds and water quality issues.",
-                "Implemented new budgeting process, based on limnological factors, incresing revenue by > 30%.",
+                "Implemented new budgeting process, based on limnological factors, increasing revenue by > 30%.",
                 "Worked together with COO, improving KPI performance, mainly client retention rate."
                 ]
 
-exp_2_role = "Aquatic Specialitst"
+exp_2_role = "Aquatic Specialist"
 exp_2_company = "EcoAqua"
 exp_2_company_link = "https://ecoaqua.com.ar/"
 exp_2_period = "Jun. 2017 - Jan. 2020"
@@ -131,8 +120,8 @@ exp_3_company_link = "https://fi.uba.ar/"
 exp_3_period = "Aug. 2017 - Present"
 exp_3_place = "Buenos Aires, Argentina"
 exp_3_keypoints = [
-                "Been asigned to > 100 students, answering queries and grading assignments.",
-                "Aided professors in examinations and dictated several practical lectures.",
+                "Been asigned to 100+ students, answering queries and grading assignments.",
+                "Aided professors in examinations and gave several practical lectures.",
                 "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow and weir design."
                 ]
 
@@ -142,17 +131,28 @@ exp_4_company_link = "https://www.buenosaires.gob.ar/desarrollourbano/desarrollo
 exp_4_period = "Jun. 2016 - May. 2017"
 exp_4_place = "Buenos Aires, Argentina"
 exp_4_keypoints = [
-                "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel > $145M).",
+                "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel, $145M+).",
                 "Elaboration of bidding documentation in accordance to IBRD norms and recommendations."
                 ]
+
+# Education info
+
+edu_1_title = "Master of Science MSc., Ecohydrology (Part-time)"
+edu_1_place = "Universidad Nacional de la Plata (UNLP)"
+edu_1_grad_date = "Thesis pending, Expected Graduation Date: 2022"
+
+edu_2_title = "Master of Engineering - MEng, Civil Engineer"
+edu_2_place = "Universidad de Buenos Aires (UBA)"
+edu_2_grad_date = "Graduated 2018"
+
 
 # Projects info
 
 proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
 proj_1_keypoints = [
                 "Python / Seaborn / EDA / CSV / DataViz",
-                "Polished, visualized and interpreted resultes of Argentine lakes dataset.",
-                "Obtained Carlson's trophic state index (TSI) for waterboides and presented relevant analysis."
+                "Polished, visualized and interpreted results of Argentine lakes dataset.",
+                "Obtained Carlson's trophic state index (TSI) for waterbodies and presented relevant analysis."
                 ]
 
 proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
