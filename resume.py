@@ -5,14 +5,14 @@ def write_header(header_title: str, width: int, height: int):
         pdf.set_font("Ubuntu Bold", "", 11)
         pdf.set_text_color(0, 0, 0)
         #pdf.set_draw_color(232,212,148)
-        pdf.set_draw_color(62, 171, 134)
+        pdf.set_draw_color(95, 130, 235)
         pdf.set_line_width(0.3)
         pdf.cell(w=width, h = height, txt=header_title, border="B", fill=False)
         pdf.ln(7)
 
 def write_exp(company: str, role: str, link: str, period: str, place: str, keypoints: list, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
-        pdf.set_text_color(0, 15, 75)
+        pdf.set_text_color(0, 25, 100)
         pdf.cell(w=width, h=height, txt="{0} - {1}".format(company, role), link=link)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
@@ -27,7 +27,7 @@ def write_exp(company: str, role: str, link: str, period: str, place: str, keypo
 
 def write_education(title: str, university: str, grad_date: str, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
-        pdf.set_text_color(0, 15, 75)
+        pdf.set_text_color(0, 25, 100)
         pdf.cell(w=width, h=height, txt=title)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
@@ -37,7 +37,7 @@ def write_education(title: str, university: str, grad_date: str, width: int, hei
 
 def write_project(title: str, keypoints: list, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
-        pdf.set_text_color(0, 15, 75)
+        pdf.set_text_color(0, 25, 100)
         pdf.cell(w=width, h=height, txt=title)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
@@ -189,7 +189,7 @@ pdf.ln(8)
 
 # CONTACT INFO 
 pdf.set_font("Ubuntu Medium", "", 8)
-pdf.set_text_color(0, 15, 75)
+pdf.set_text_color(0, 25, 100)
 pdf.write(h_cells, mail, link=mail)
 pdf.write(h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h_cells, cellphone)
