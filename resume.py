@@ -52,7 +52,7 @@ def write_project(title: str, keypoints: list, width: int, height: int):
 # Contact and general info
 footnote  = ">>> This resume was generated entirely in Python. For full sourcecode, view my portfolio."
 name = "Arturo J. Ossorio Arana"
-role = "Ecohydrologist - Data Scientist"
+role = "Data Scientist"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
@@ -61,7 +61,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "I am an ecohydrologist and data scientist. I have a MEng in Civil Engineering and besides having and analytical background I have experience working with diverse stakeholders and managing teams. I am a generalist, who likes to learn new concepts and techniques, mainly related to water resources and coding. My professional aspiration consists of applying Machine Learning models and using big data to tackle ecohydrological and limnological issues, such as water scarcity, evapotranspiration, water balance and eutrophication of freshwater ecosystems."
+description = "Passionate about harnessing data science solutions to tackle cross-functional projects, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, and particularly interested in machine learning."
 
 # Skills
 skills = [
