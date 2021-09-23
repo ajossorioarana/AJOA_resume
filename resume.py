@@ -61,7 +61,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "Passionate about harnessing data science solutions to tackle cross-functional projects, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, and particularly interested in machine learning."
+description = "Passionate about harnessing data science solutions to tackle complex, cross-functional problems, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, particularly interested in machine learning."
 
 # Skills
 skills = [
@@ -98,9 +98,9 @@ exp_1_company_link = "https://ecoaqua.com.ar/"
 exp_1_period = "Feb. 2020 - Present"
 exp_1_place = "Buenos Aires, Argentina"
 exp_1_keypoints = [
-                "Diagnosed and treated customer's lakes for algae, weeds and water quality issues.",
-                "Implemented new budgeting process, based on limnological factors, increasing revenue by > 30%.",
-                "Worked together with COO, improving KPI performance, mainly client retention rate."
+                "Diagnosed and treated for algae, submersed, floating and shoreline weeds, non-desirable buffer vegetation and any other unwanted vegetation and water quality issues.",
+                "Implemented new budgeting process based on limnological and operational factors, increasing revenue by 27%.",
+                "Devised and developed alongside COO new workflow for dealing with customer's complaints, improving client retention rate by 30% and ensuring response of every request on time."
                 ]
 
 exp_2_role = "Aquatic Specialist"
@@ -109,9 +109,9 @@ exp_2_company_link = "https://ecoaqua.com.ar/"
 exp_2_period = "Jun. 2017 - Jan. 2020"
 exp_2_place = "Buenos Aires, Argentina"
 exp_2_keypoints = [
-                "Managed five 2-people teams to ensure all services are completed on schedule.",
-                "Serviced customer’s lakes to provide superior quality and service in the fulfillment of all customer needs.",
-                "Deployed maintainance routine for vehicles and machinery, decreasing workflow interruptions by 40%."
+                "Managed five 2-people teams guaranteeing all services were completed on schedule. Planned monthly and weekly field and client related work, providing detailed notes and service instructions.",
+                "In charge of maintaining 500+ acres of customer’s lakes, providing superior quality service in the fulfillment of all customer needs, leading to 42% complaint reduction.",
+                "Formulated and standarized maintainance routine for vehicles, machinery and tools, decreasing workflow interruptions by 60%."
                 ]
 
 exp_3_role = 'Graduate Teaching Assistant (Course "Applied Hydraulics")'
@@ -120,9 +120,9 @@ exp_3_company_link = "https://fi.uba.ar/"
 exp_3_period = "Aug. 2017 - Present"
 exp_3_place = "Buenos Aires, Argentina"
 exp_3_keypoints = [
-                "Been asigned to 100+ students, answering queries and grading assignments.",
-                "Aided professors in examinations and gave several practical lectures.",
-                "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow and weir design."
+                "Asigned 100+ students, answering queries and grading assignments. Rated as \"Very helpfull\" or \"Excelent\" by 96% of students.",
+                "Aided professors in examinations and course administration. Gave several practical lectures, developing new material for grasping difficult concepts.",
+                "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow and weir and culvert design."
                 ]
 
 exp_4_role = "Bid/Tender Assistant"
@@ -131,7 +131,7 @@ exp_4_company_link = "https://www.buenosaires.gob.ar/desarrollourbano/desarrollo
 exp_4_period = "Jun. 2016 - May. 2017"
 exp_4_place = "Buenos Aires, Argentina"
 exp_4_keypoints = [
-                "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel, $145M+).",
+                "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel, $145MM USD).",
                 "Elaboration of bidding documentation in accordance to IBRD norms and recommendations."
                 ]
 
@@ -150,16 +150,12 @@ edu_2_grad_date = "Graduated 2018"
 
 proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
 proj_1_keypoints = [
-                "Python / Seaborn / EDA / CSV / DataViz",
-                "Polished, visualized and interpreted results of Argentine lakes dataset.",
-                "Obtained Carlson's trophic state index (TSI) for waterbodies and presented relevant analysis."
+                "Obtained Carlson's trophic state index (TSI) for waterbodies sampled in water quality dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication. Used Python and Seaborn library to analyze and present the results."
                 ]
 
 proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
 proj_2_keypoints = [
-                "QGIS / GRASS",
-                "Developed map of Chimehuín river basin using processed DEM, with lakes and watercourses marked on it.",
-                "Created as part of dissertation about exotic willow (Salix fragilis) invasion of patagonian rivers."
+                "Developed map of Chimehuín river basin with lakes and watercourses marked on it. Used public DEM and GRASS QGIS to define slopes, flow direction and watershead. Created as part of dissertation about exotic willow (Salix fragilis) invasion of patagonian rivers."
                 ]
 
 
@@ -173,7 +169,7 @@ pdf.add_page()
 pdf.set_auto_page_break(True, margin=1)
 
 width = 189
-h_cells = 6
+h_cells = 5
 
 # NAME AND ROLE
 
@@ -204,7 +200,7 @@ pdf.ln(8)
 write_header("ABOUT ME", width, h_cells)
 pdf.ln(1)
 pdf.set_font("Ubuntu Light", "", 9)
-pdf.write(h=h_cells - 1, txt=description)
+pdf.write(h=h_cells, txt=description)
 pdf.ln(8)
 
 
@@ -235,7 +231,7 @@ write_project(proj_2_title, proj_2_keypoints, width, h_cells)
 
 pdf.set_text_color(100, 100, 100)
 pdf.set_font("Ubuntu Light", "I", 7)
-pdf.set_xy(x=10, y=280)
+pdf.set_xy(x=10, y=285)
 pdf.write(h=h_cells - 2, txt=footnote, link=github)
 
 
