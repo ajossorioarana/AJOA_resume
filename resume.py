@@ -50,7 +50,7 @@ def write_project(title: str, keypoints: list, width: int, height: int):
 # TEXT VARIABLES
 
 # Contact and general info
-footnote  = ">>> This resume was generated entirely in Python. For full sourcecode, view my portfolio."
+footnote  = ">>> This resume was generated entirely in Python. For full source code, view my portfolio."
 name = "Arturo J. Ossorio Arana"
 role = "Data Scientist"
 city = "San Martín de los Andes"
@@ -111,7 +111,7 @@ exp_2_place = "Buenos Aires, Argentina"
 exp_2_keypoints = [
                 "Managed five 2-people teams guaranteeing all services were completed on schedule. Planned monthly and weekly field and client related work, providing detailed notes and service instructions.",
                 "In charge of maintaining 500+ acres of customer’s lakes, providing superior quality service in the fulfillment of all customer needs, leading to 42% complaint reduction.",
-                "Formulated and standarized maintainance routine for vehicles, machinery and tools, decreasing workflow interruptions by 60%."
+                "Formulated and standardized maintenance routine for vehicles, machinery and tools, decreasing workflow interruptions by 60%."
                 ]
 
 exp_3_role = 'Graduate Teaching Assistant (Course "Applied Hydraulics")'
@@ -120,7 +120,7 @@ exp_3_company_link = "https://fi.uba.ar/"
 exp_3_period = "Aug. 2017 - Present"
 exp_3_place = "Buenos Aires, Argentina"
 exp_3_keypoints = [
-                "Asigned 100+ students, answering queries and grading assignments. Rated as \"Very helpfull\" or \"Excelent\" by 96% of students.",
+                "Assigned to 100+ students, answering queries and grading assignments. Rated as \"Very helpful\" or \"Excellent\" by 96% of students.",
                 "Aided professors in examinations and course administration. Gave several practical lectures, developing new material for grasping difficult concepts.",
                 "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow and weir and culvert design."
                 ]
@@ -150,12 +150,12 @@ edu_2_grad_date = "Graduated 2018"
 
 proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
 proj_1_keypoints = [
-                "Obtained Carlson's trophic state index (TSI) for waterbodies sampled in water quality dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication. Used Python and Seaborn library to analyze and present the results."
+                "Obtained Carlson's trophic state index (TSI) for waterbodies in dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication. Used Python and Seaborn library to analyze and present the results."
                 ]
 
 proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
 proj_2_keypoints = [
-                "Developed map of Chimehuín river basin with lakes and watercourses marked on it. Used public DEM and GRASS QGIS to define slopes, flow direction and watershead. Created as part of dissertation about exotic willow (Salix fragilis) invasion of patagonian rivers."
+                "Developed map of Chimehuín river basin with lakes and watercourses marked on it. Used public DEM and GRASS QGIS to define slopes, flow direction and watershed. Created as part of dissertation about exotic willow (Salix fragilis) invasion of Patagonian rivers."
                 ]
 
 
