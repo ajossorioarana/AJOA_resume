@@ -20,7 +20,7 @@ def write_exp(company: str, role: str, link: str, period: str, place: str, keypo
         pdf.ln(5)
         pdf.set_font("Ubuntu Light", "", 8)
         for keypoint in keypoints:
-                pdf.write(h=height, txt="• {0}".format(keypoint))
+                pdf.write(h=height, txt="+ {0}".format(keypoint))
                 pdf.ln(5)
         pdf.ln(3)
 
@@ -42,7 +42,7 @@ def write_project(title: str, keypoints: list, width: int, height: int):
         pdf.set_text_color(0, 0, 0)
         pdf.set_font("Ubuntu Light", "", 8)
         for keypoint in keypoints:
-                        pdf.write(h=height, txt="• {0}".format(keypoint))
+                        pdf.write(h=height, txt="+ {0}".format(keypoint))
                         pdf.ln(5)
         pdf.ln(3)
 
@@ -50,6 +50,7 @@ def write_project(title: str, keypoints: list, width: int, height: int):
 # TEXT VARIABLES
 
 # Contact and general info
+
 name = "Arturo J. Ossorio Arana"
 role = "Data Scientist"
 city = "San Martín de los Andes"
@@ -60,7 +61,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-footnote  = ">>> This resume was generated entirely in Python. For full source code, view my portfolio."
+footnote  = ">>> Este CV se generó completamente en Python. Para ver el código, visite mi perfil de GitHub."
 description = "Passionate about harnessing data science solutions to tackle complex, cross-functional problems, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, particularly interested in machine learning."
 
 
@@ -69,55 +70,55 @@ description = "Passionate about harnessing data science solutions to tackle comp
 exp_1_role = "Biology Project Manager"
 exp_1_company = "EcoAqua"
 exp_1_company_link = "https://ecoaqua.com.ar/"
-exp_1_period = "Feb. 2020 - Present"
+exp_1_period = "Feb. 2020 - Actualidad"
 exp_1_place = "Buenos Aires, Argentina"
 exp_1_keypoints = [
-                "Diagnosed and treated for algae, submersed, floating and shoreline weeds, non-desirable buffer vegetation and any other unwanted vegetation and water quality issues.",
-                "Implemented new budgeting process based on limnological and operational factors, increasing revenue by 27%.",
-                "Devised and developed alongside COO new workflow for dealing with customer's complaints, improving client retention rate by 30% and ensuring response of every request on time."
+                "Diagnóstico y tratamiento de algas, malezas (sumergidas, flotantes y costeras), déficit de oxígeno disuelto y otros problemas de calidad de agua.",
+                "Implementé nuevo sistema de elaboración de presupuestos basado en factores limnológicos y operativos asociados al lago del cliente, incrementando los ingresos un 27%.",
+                "Desarrollé en conjunto con COO un nuevo flujo de trabajo para responder y solucionar reclamos de nuestros clientes, resultando en un aumento del 30% en la tasa de retención de clientes."
                 ]
 
 exp_2_role = "Aquatic Specialist"
 exp_2_company = "EcoAqua"
 exp_2_company_link = "https://ecoaqua.com.ar/"
-exp_2_period = "Jun. 2017 - Jan. 2020"
+exp_2_period = "Jun. 2017 - Ene. 2020"
 exp_2_place = "Buenos Aires, Argentina"
 exp_2_keypoints = [
-                "Managed five 2-people teams guaranteeing all services were completed on schedule. Planned monthly and weekly field and client related work, providing detailed notes and service instructions.",
-                "In charge of maintaining 500+ acres of customer’s lakes, providing superior quality service in the fulfillment of all customer needs, leading to 42% complaint reduction.",
-                "Formulated and standardized maintenance routine for vehicles, machinery and tools, decreasing workflow interruptions by 60%."
+                "Coordinador de cinco equipos de 2 personas, garantizando que los servicios y compromisos con los clientes se ejecuten a tiempo. Realicé planificaciones mensuales y semanales de tareas de campo, elaborando informes de gestión e instrucciones para operarios.",
+                "Estuve a cargo del mantenimiento de 200+ hectáreas de lagos, lagunas y estanques, brindando un servicio de calidad superior que resultó en una reducción del 42% en la cantidad de reclamos.",
+                "Formulé e implementé una rutina de mantenimiento de vehículos, herramientas y maquinaria, logrando disminuir las interrupciones asociadas un 60%."
                 ]
 
-exp_3_role = 'Graduate Teaching Assistant (Course "Applied Hydraulics")'
+exp_3_role = 'Ayudante de Cátedra (Asignatura "Hidráulica Aplicada")'
 exp_3_company = "UBA"
 exp_3_company_link = "https://fi.uba.ar/"
-exp_3_period = "Aug. 2017 - Present"
+exp_3_period = "Ago. 2017 - Actualidad"
 exp_3_place = "Buenos Aires, Argentina"
 exp_3_keypoints = [
-                "Assigned to 100+ students, answering queries and grading assignments. Rated as \"Very helpful\" or \"Excellent\" by 96% of students.",
-                "Aided professors in examinations and course administration. Gave several practical lectures, developing new material for grasping difficult concepts.",
-                "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow and weir and culvert design."
+                "Ayudante asignado a 100+ estudiantes, resolviendo consultas y corrigiendo trabajos prácticos. Reconocido como \"Excelente\" o \"Muy bueno\" por el 96% de los alumnos a cargo.",
+                "Asistí a profesores en exámenes y en administración del curso. Dicté varias clases prácticas y desarrollé nuevas herramientas para que la mejor comprensión de temas difíciles de la asignatura.",
+                "Programa de la materia: Cálculo de tuberías, máquinas hidráulicas, golpe de ariete, cálculo de canales, orificios y vertederos, curvas de remanso, resalto hidráulico y cálculo de alcantarillas."
                 ]
 
-exp_4_role = "Bid/Tender Analyst"
-exp_4_company = "Buenos Aires City Government"
+exp_4_role = "Analista de Adquisiciones"
+exp_4_company = "Gobierno de la Ciudad de Buenos Aires"
 exp_4_company_link = "https://www.buenosaires.gob.ar/desarrollourbano/desarrollo/planes/plan-hidraulico"
 exp_4_period = "Jun. 2016 - May. 2017"
 exp_4_place = "Buenos Aires, Argentina"
 exp_4_keypoints = [
-                "Cash-flow and finance audit of IBRD-loan WASH project (Arroyo Vega Drainage Tunnel, $145MM USD).",
-                "Elaboration of bidding documentation in accordance to IBRD norms and recommendations."
+                "Control y auditoría de certificados de avance de obra \"Segundo Emisario Arroyo Vega\". Monto adjudicado de $145MM USD",
+                "Desarrollo de pliegos para la licitación de obras y consultorías de obras hidráulicas, de acuerdo a normativas y lineamientos del BIRF"
                 ]
 
 # Education info
 
-edu_1_title = "Master of Science MSc., Ecohydrology (Part-time)"
+edu_1_title = "Maestría en Ecohidrología (Part-time)"
 edu_1_place = "Universidad Nacional de la Plata (UNLP)"
-edu_1_grad_date = "Thesis pending, Expected Graduation Date: 2022"
+edu_1_grad_date = "Tesis pendiente, Fecha estimada de graduación: 2022"
 
-edu_2_title = "Master of Engineering - MEng, Civil Engineer"
+edu_2_title = "Ingeniero Civil"
 edu_2_place = "Universidad de Buenos Aires (UBA)"
-edu_2_grad_date = "Graduated 2018"
+edu_2_grad_date = "Graduado 2018"
 
 
 # Projects info
@@ -171,7 +172,7 @@ pdf.ln(8)
 
 # DESCRIPTION
 
-write_header("ABOUT ME", width, h_cells)
+write_header("ACERCA DE MÍ", width, h_cells)
 pdf.ln(1)
 pdf.set_font("Ubuntu Light", "", 9)
 pdf.write(h=h_cells, txt=description)
@@ -180,7 +181,7 @@ pdf.ln(8)
 
 # EXPERIENCE
 
-write_header("EXPERIENCE", width, h_cells)
+write_header("EXPERIENCIA LABORAL", width, h_cells)
 write_exp(exp_1_company, exp_1_role, exp_1_company_link, exp_1_period, exp_1_place, exp_1_keypoints, width, h_cells)
 write_exp(exp_2_company, exp_2_role, exp_2_company_link, exp_2_period, exp_2_place, exp_2_keypoints, width, h_cells)
 write_exp(exp_3_company, exp_3_role, exp_3_company_link, exp_3_period, exp_3_place, exp_3_keypoints, width, h_cells)
@@ -189,14 +190,14 @@ write_exp(exp_4_company, exp_4_role, exp_4_company_link, exp_4_period, exp_4_pla
 
 # EDUCATION
 
-write_header("EDUCATION", width, h_cells)
+write_header("EDUCACIÓN", width, h_cells)
 write_education(edu_1_title, edu_1_place, edu_1_grad_date, width, h_cells)
 write_education(edu_2_title, edu_2_place, edu_2_grad_date, width, h_cells)
 
 
 # PROJECTS 
 
-write_header("PROJECTS/PUBLICATIONS", width, h_cells)
+write_header("PROJECTOS/PUBLICACIONES", width, h_cells)
 write_project(proj_1_title, proj_1_keypoints, width, h_cells)
 write_project(proj_2_title, proj_2_keypoints, width, h_cells)
 
@@ -211,4 +212,4 @@ pdf.write(h=h_cells - 2, txt=footnote, link=github)
 
 # Export as PDF
 
-pdf.output("Ossorio_Arturo_Resume.pdf", "F")
+pdf.output("Ossorio_Arturo_Resume_ES.pdf", "F")
