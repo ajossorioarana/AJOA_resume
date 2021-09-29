@@ -62,7 +62,7 @@ github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
 footnote  = ">>> Este CV se generó completamente en Python. Para ver el código, visite mi perfil de GitHub."
-description = "Passionate about harnessing data science solutions to tackle complex, cross-functional problems, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, particularly interested in machine learning."
+description = "Apasionado por aprovechar las soluciones de data science para abordar problemas complejos y multidisciplinarios, principalmente relacionados con los recursos hídricos y los ecosistemas acuáticos. Me destaco por ayudar a las organizaciones a comprender y aprovechar el potencial de su información. Reconocido por excelentes habilidades de comunicación combinadas con la capacidad de relacionarse con personas de orígenes diversos. Siempre abierto a nuevos desafíos, particularmente interesado en machine learning."
 
 
 # Experience info
@@ -86,7 +86,7 @@ exp_2_place = "Buenos Aires, Argentina"
 exp_2_keypoints = [
                 "Coordinador de cinco equipos de 2 personas, garantizando que los servicios y compromisos con los clientes se ejecuten a tiempo. Realicé planificaciones mensuales y semanales de tareas de campo, elaborando informes de gestión e instrucciones para operarios.",
                 "Estuve a cargo del mantenimiento de 200+ hectáreas de lagos, lagunas y estanques, brindando un servicio de calidad superior que resultó en una reducción del 42% en la cantidad de reclamos.",
-                "Formulé e implementé una rutina de mantenimiento de vehículos, herramientas y maquinaria, logrando disminuir las interrupciones asociadas un 60%."
+                "Formulé e implementé una rutina de mantenimiento de vehículos, herramientas y maquinaria, logrando disminuir interrupciones asociadas un 60%."
                 ]
 
 exp_3_role = 'Ayudante de Cátedra (Asignatura "Hidráulica Aplicada")'
@@ -106,8 +106,8 @@ exp_4_company_link = "https://www.buenosaires.gob.ar/desarrollourbano/desarrollo
 exp_4_period = "Jun. 2016 - May. 2017"
 exp_4_place = "Buenos Aires, Argentina"
 exp_4_keypoints = [
-                "Control y auditoría de certificados de avance de obra \"Segundo Emisario Arroyo Vega\". Monto adjudicado de $145MM USD",
-                "Desarrollo de pliegos para la licitación de obras y consultorías de obras hidráulicas, de acuerdo a normativas y lineamientos del BIRF"
+                "Control y auditoría de certificados de avance de obra \"Segundo Emisario Arroyo Vega\". Monto adjudicado de $145MM USD.",
+                "Desarrollo de pliegos para la licitación de obras y consultorías de obras hidráulicas, de acuerdo a normativas y lineamientos del BIRF."
                 ]
 
 # Education info
@@ -123,9 +123,9 @@ edu_2_grad_date = "Graduado 2018"
 
 # Projects info
 
-proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
+proj_1_title = "Análisis exploratorio de datos sobre dataset de lagos y embalses de Argentina"
 proj_1_keypoints = [
-                "Obtained Carlson's trophic state index (TSI) for waterbodies in dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication. Used Python and Seaborn library to analyze and present the results."
+                "Obtuve el índice de estado trófico (TSI) de Carlson para los cuerpos de agua del dataset mencionado. Analicé diferencias entre espejos de agua naturales y artificiales y el rol de la profundidad y latitud sobre la eutrofización. (Python + Seaborn)"
                 ]
 
 proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
@@ -199,7 +199,7 @@ write_education(edu_2_title, edu_2_place, edu_2_grad_date, width, h_cells)
 
 write_header("PROJECTOS/PUBLICACIONES", width, h_cells)
 write_project(proj_1_title, proj_1_keypoints, width, h_cells)
-write_project(proj_2_title, proj_2_keypoints, width, h_cells)
+# write_project(proj_2_title, proj_2_keypoints, width, h_cells)
 
 
 # Footnote
