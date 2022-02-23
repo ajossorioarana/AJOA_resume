@@ -34,10 +34,10 @@ def write_education(title: str, university: str, grad_date: str, width: int, hei
         pdf.cell(w=width, h=height, txt=(university + " - " + grad_date))
         pdf.ln(8)
 
-def write_project(title: str, keypoints: list, width: int, height: int):
+def write_project(title: str, keypoints: list, link: str, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
         pdf.set_text_color(0, 25, 100)
-        pdf.cell(w=width, h=height, txt=title)
+        pdf.cell(w=width, h=height, txt=title, link=link)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
         pdf.set_font("Ubuntu Light", "", 8)
@@ -123,15 +123,19 @@ edu_2_grad_date = "Graduado 2018"
 
 # Projects info
 
-proj_1_title = "Análisis exploratorio de datos sobre dataset de lagos y embalses de Argentina"
+proj_1_title = "Elaboración de exámen de Pandas para evaluación de candidatos de diversos roles"
+proj_1_link = "https://www.testgorilla.com/test-library/programming-skills-tests/pandas-test/"
 proj_1_keypoints = [
+                "Creación de 50 preguntas sitauacionales acerca de Pandas, diseñadas para evaluar el análisis situacional de candidatos. Revisión de más de 50 preguntas elaboradas por otro experto en la materia." 
+                ]
+
+
+proj_2_title = "Análisis exploratorio de datos sobre dataset de lagos y embalses de Argentina"
+proj_2_link = "ajossorioarana.github.io"
+proj_2_keypoints = [
                 "Obtuve el índice de estado trófico (TSI) de Carlson para los cuerpos de agua del dataset mencionado. Analicé diferencias entre espejos de agua naturales y artificiales y el rol de la profundidad y latitud sobre la eutrofización. (Python + Seaborn)"
                 ]
 
-proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
-proj_2_keypoints = [
-                "Developed map of Chimehuín river basin with lakes and watercourses marked on it. Used public DEM and GRASS QGIS to define slopes, flow direction and watershed. Created as part of dissertation about exotic willow (Salix fragilis) invasion of Patagonian rivers."
-                ]
 
 
 # ARMADO DE PDF
@@ -198,8 +202,8 @@ write_education(edu_2_title, edu_2_place, edu_2_grad_date, width, h_cells)
 # PROJECTS 
 
 write_header("PROJECTOS/PUBLICACIONES", width, h_cells)
-write_project(proj_1_title, proj_1_keypoints, width, h_cells)
-# write_project(proj_2_title, proj_2_keypoints, width, h_cells)
+write_project(proj_1_title, proj_1_keypoints, proj_1_link, width, h_cells)
+#write_project(proj_2_title, proj_2_keypoints, proj_2_link, width, h_cells)
 
 
 # Footnote

@@ -34,10 +34,10 @@ def write_education(title: str, university: str, grad_date: str, width: int, hei
         pdf.cell(w=width, h=height, txt=(university + " - " + grad_date))
         pdf.ln(8)
 
-def write_project(title: str, keypoints: list, width: int, height: int):
+def write_project(title: str, keypoints: list, link: str, width: int, height: int):
         pdf.set_font("Ubuntu Medium", "", 10)
         pdf.set_text_color(0, 25, 100)
-        pdf.cell(w=width, h=height, txt=title)
+        pdf.cell(w=width, h=height, txt=title, link=link)
         pdf.ln(5)
         pdf.set_text_color(0, 0, 0)
         pdf.set_font("Ubuntu Light", "", 8)
@@ -122,15 +122,18 @@ edu_2_grad_date = "Graduated 2018"
 
 # Projects info
 
-proj_1_title = "EDA on Argentine lakes and reservoirs dataset"
+proj_1_title = "Test elaboration on Pandas to evaluate candidates for different roles"
+proj_1_link = "https://www.testgorilla.com/test-library/programming-skills-tests/pandas-test/"
 proj_1_keypoints = [
+                "Created 50 scenario-based questions on Pandas, designed to test the situational judgement of the candidates. Reviewed and corrected 50+ previous questions made by another expert." 
+                ]
+
+proj_2_title = "EDA on Argentine lakes and reservoirs dataset"
+proj_2_link = "ajossorioarana.github.io"
+proj_2_keypoints = [
                 "Obtained Carlson's trophic state index (TSI) for waterbodies in dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication. Used Python and Seaborn library to analyze and present the results."
                 ]
 
-proj_2_title = "Watershed delineation of Chimehuín river, Patagonia, Argentina"
-proj_2_keypoints = [
-                "Developed map of Chimehuín river basin with lakes and watercourses marked on it. Used public DEM and GRASS QGIS to define slopes, flow direction and watershed. Created as part of dissertation about exotic willow (Salix fragilis) invasion of Patagonian rivers."
-                ]
 
 
 # ARMADO DE PDF
@@ -197,8 +200,8 @@ write_education(edu_2_title, edu_2_place, edu_2_grad_date, width, h_cells)
 # PROJECTS 
 
 write_header("PROJECTS/PUBLICATIONS", width, h_cells)
-write_project(proj_1_title, proj_1_keypoints, width, h_cells)
-write_project(proj_2_title, proj_2_keypoints, width, h_cells)
+write_project(proj_1_title, proj_1_keypoints, proj_1_link, width, h_cells)
+write_project(proj_2_title, proj_2_keypoints, proj_2_link, width, h_cells)
 
 
 # Footnote
