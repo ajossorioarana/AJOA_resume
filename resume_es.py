@@ -79,7 +79,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "Apasionado por aprovechar las soluciones de data science para abordar problemas complejos y multidisciplinarios, principalmente relacionados con los recursos hídricos y los ecosistemas acuáticos. Me destaco por ayudar a las organizaciones a comprender y aprovechar el potencial de su información. Reconocido por excelentes habilidades de comunicación combinadas con la capacidad de relacionarse con personas de orígenes diversos. Siempre abierto a nuevos desafíos, particularmente interesado en machine learning."
+description = "Me gusta construir cosas, experimentar con nuevas herramientas y aprender nuevos conceptos. Encuentro el proceso de seccionar un problema, analizar sus distintos componentes y evaluar las posibles soluciones (con sus pros y contras) extremadamente estimulante, especialmente al encarar problemas complejos y multidisciplinarios con resultados tangibles.\nEn búsqueda de nuevos desafíos dentro de data analytics o data science. Estoy particularmente interesado en la intersección entre data science y ecohidrología o ecosistemas acuáticos."
 
 # Experience info
 exp_1_role = "Limnólogo | Data Analyst"
@@ -88,9 +88,9 @@ exp_1_company_link = "https://ecoaqua.com.ar/"
 exp_1_period = "Mar. 2021 - Actualidad"
 exp_1_place = "Argentina (Remoto)"
 exp_1_keypoints = [
-                "Consistently delivered limnological reports of client's water bodies, preventively identifying negative trends in key water quality parameters and evaluating possible solutions",
-                "Revamped reporting process, decreasing total delivery time by 45% while decreasing errors.",
-                "Performed analysis on water data, identifying regional and seasonal differences in key variables as well as potential correlation between lake, watershed and limnological parameters."
+                "Elaboración periodica de informes a clientes sobre estado de espejos de agua, identificando tendencias negativas en parámetros clave y evaluando posibles soluciones.",
+                "Modernicé proceso de informes, disminuyendo el tiempo de entrega en un 45% y disminuyendo substancialmente los errores cometidos.",
+                "Realicé análisis con datos de calidad de agua, identificando diferencias regionales y estacionales en variables fundamentales, así como correlaciones potenciales entre parámetros limnológicos y características morfológica de los cuerpos de agua y sus cuencas."
                 ]
 
 exp_2_role = "Biology Project Manager"
@@ -154,22 +154,22 @@ proj_2_keypoints = [
 
 # Skills info
 skills_1_title = "Python"
-skills_1_description = "Pandas, scikit-learn, GeoPandas, NumPy, SciPy, Request, Matplotlib, Seaborn, Plotly"
+skills_1_description = "Pandas, scikit-learn, GeoPandas, NumPy, Request, Matplotlib, Seaborn"
 
-skills_2_title = "Term"
-skills_2_description = "Git, SQL"
+skills_2_title = "Herramientas relacionadas"
+skills_2_description = "Git, SQL, PostgreSQL"
 
-skills_3_title = "Matemáticas"
-skills_3_description = "Probabilidad, Estadística, Combinatorias, Álgebra lineal, Análisi Matemático"
+skills_3_title = "GIS y Imágenes satelitales"
+skills_3_description = "QGIS, Datos vectores y ráster, MDE, Delineación de cuencas"
 
-skills_4_title = "Hidrología"
-skills_4_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
+skills_4_title = "Matemáticas"
+skills_4_description = "Probabilidad, Estadística, Álgebra Lineal, Análisis Matemático"
 
-skills_5_title = "Ecología"
-skills_5_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
+skills_5_title = "Ecohidrología y Limnología"
+skills_5_description = "Balance hídrico, Precipitaciones de diseño, Eutrofización, Manejo de lagos"
 
 # Other activities
-activities_description = "Fútbol, Pesca con mosca, Trekking, Esquí, Camping, Lectura, Cocina, Guitarra."
+activities_description = "Fútbol, Pesca con mosca, Trekking, Esquí, Camping, Lectura, Guitarra, Radioafición."
 
 
 # Creates an instance of FPDF class and sets its title and author

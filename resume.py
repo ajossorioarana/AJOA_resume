@@ -77,7 +77,7 @@ linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "Passionate about harnessing data science solutions to tackle complex, cross-functional problems, mainly related to water resources and freshwater ecosystems. I excel in helping organizations to understand and leverage the full potential of their data. Recognized for excellent communication skills combined with the ability to relate to people from diverse backgrounds. Always open for new challenges, particularly interested in machine learning."
+description = "I love building things, tinkering with new tools, and learning new concepts. I find the process of dissecting a problem, analyzing the different components and evaluate possible solutions (with its trade-offs) extremely stimulating, especially when tackling complex, cross-functional problems with tangible outcomes.\nLooking for new challenges within the data spectrum. Particularly interested in the intersection between data science and ecohydrology or freshwater issues."
 
 # Experience info
 exp_1_role = "Limnologist | Data Analyst"
@@ -155,22 +155,22 @@ proj_3_keypoints = [
 
 # Skills info
 skills_1_title = "Python"
-skills_1_description = "Pandas, scikit-learn, GeoPandas, NumPy, SciPy, Request, Matplotlib, Seaborn, Plotly"
+skills_1_description = "Pandas, scikit-learn, GeoPandas, NumPy, Request, Matplotlib, Seaborn"
 
-skills_2_title = "Term"
-skills_2_description = "Git, SQL"
+skills_2_title = "Data-related tools"
+skills_2_description = "Git, SQL, PostgreSQL"
 
-skills_3_title = "Mathematics"
-skills_3_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
+skills_3_title = "GIS and Remote Sensing"
+skills_3_description = "QGIS, Vector & raster data, DEM, Watershed delineation"
 
-skills_4_title = "Hydrology"
+skills_4_title = "Maths"
 skills_4_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
 
-skills_5_title = "Ecology"
-skills_5_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
+skills_5_title = "Ecohydrology & Freshwater Ecosystems"
+skills_5_description = "Water balance, Hydrograms, Eutrophication, Nutrient budgeting, Lake management"
 
 # Other activities
-activities_description = "Soccer, Fly fishing, Hiking, Skiing, Camping, Reading, Cooking, Playing guitar."
+activities_description = "Soccer, Fly fishing, Hiking, Skiing, Camping, Reading, Cooking, Playing guitar, Amateur radio"
         
 # Creates an instance of FPDF class and sets its title and author
 pdf = FPDF(orientation='P', unit='mm', format='A4')
