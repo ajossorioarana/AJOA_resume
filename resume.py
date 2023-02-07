@@ -68,57 +68,68 @@ def write_activities(description: str, width: int, height: int):
 
 # Contact and general info
 name = "Arturo J. Ossorio Arana"
-role = "Data Scientist"
+role = "Ecohydrologist | Data Scientist"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
 cellphone = "+54 9 113 636 8323"
 linkedin = "linkedin.com/in/ajossorioarana"
-github = "github.com/ajossorioarana"
+#github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
 description = "I love building things, tinkering with new tools, and learning new concepts. I find the process of dissecting a problem, analyzing the different components and evaluate possible solutions (with its trade-offs) extremely stimulating, especially when tackling complex, cross-functional problems with tangible outcomes.\nLooking for new challenges within the data spectrum. Particularly interested in the intersection between data science and ecohydrology or freshwater issues."
 
 # Experience info
-exp_1_role = "Limnologist | Data Analyst"
-exp_1_company = "EcoAqua"
-exp_1_company_link = "https://ecoaqua.com.ar/"
-exp_1_period = "Mar. 2021 - Present"
-exp_1_place = "Argentina (Remote)"
+exp_1_role = "Python Programmer | Data Analyst"
+exp_1_company = "HK Analytics"
+exp_1_company_link = "https://hkanalytics.io/"
+exp_1_period = "Jun. 2022 - Present"
+exp_1_place = "Freelancer (through Upwork)"
 exp_1_keypoints = [
                 "Consistently delivered limnological reports of client's water bodies, preventively identifying negative trends in key water quality parameters and evaluating possible solutions",
                 "Revamped reporting process, decreasing total delivery time by 45% while decreasing errors.",
                 "Performed analysis on water data, identifying regional and seasonal differences in key variables as well as potential correlation between lake, watershed and limnological parameters."
                 ]
 
-exp_2_role = "Biology Project Manager"
+exp_2_role = "Limnologist | Data Analyst"
 exp_2_company = "EcoAqua"
 exp_2_company_link = "https://ecoaqua.com.ar/"
-exp_2_period = "Feb. 2020 - Feb. 2021"
-exp_2_place = "Buenos Aires, Argentina"
+exp_2_period = "Mar. 2021 - Present"
+exp_2_place = "Argentina (Remote)"
 exp_2_keypoints = [
+                "Consistently delivered limnological reports of client's water bodies, preventively identifying negative trends in key water quality parameters and evaluating possible solutions",
+                "Revamped reporting process, decreasing total delivery time by 45% while decreasing errors.",
+                "Performed analysis on water data, identifying regional and seasonal differences in key variables as well as potential correlation between lake, watershed and limnological parameters."
+                ]
+
+exp_3_role = "Biology Project Manager"
+exp_3_company = "EcoAqua"
+exp_3_company_link = "https://ecoaqua.com.ar/"
+exp_3_period = "Feb. 2020 - Feb. 2021"
+exp_3_place = "Buenos Aires, Argentina"
+exp_3_keypoints = [
                 "Diagnosed and treated for algae, submersed, floating and shoreline weeds and any other unwanted vegetation and water quality issues.",
                 "Implemented new budgeting process based on limnological and operational factors, increasing revenue by 27%.",
                 "Developed new workflow for solving customer's complaints, improving client retention rate by 30%, ensuring response of every request on time."
                 ]
 
-exp_3_role = "Aquatic Specialist"
-exp_3_company = "EcoAqua"
-exp_3_company_link = "https://ecoaqua.com.ar/"
-exp_3_period = "Jun. 2017 - Jan. 2020"
-exp_3_place = "Buenos Aires, Argentina"
-exp_3_keypoints = [
+exp_4_role = "Aquatic Specialist"
+exp_4_company = "EcoAqua"
+exp_4_company_link = "https://ecoaqua.com.ar/"
+exp_4_period = "Jun. 2017 - Jan. 2020"
+exp_4_place = "Buenos Aires, Argentina"
+exp_4_keypoints = [
                 "Managed five 2-people teams guaranteeing all services were completed on schedule. Devised and executed monthly and weekly schedules.",
                 "Maintained 500+ acres of customer's lakes, providing superior quality service, fullfilling of all customer needs leading to 42% complaint reduction.",
                 "Formulated and standardized maintenance routine for vehicles, machinery and tools, decreasing workflow interruptions by 60%."
                 ]
 
-exp_4_role = 'Graduate Teaching Assistant (Applied Hydraulics)'
-exp_4_company = "UBA"
-exp_4_company_link = "https://fi.uba.ar/"
-exp_4_period = "Aug. 2017 - Present"
-exp_4_place = "Buenos Aires, Argentina"
-exp_4_keypoints = [
+exp_5_role = 'Graduate Teaching Assistant (Applied Hydraulics)'
+exp_5_company = "UBA"
+exp_5_company_link = "https://fi.uba.ar/"
+exp_5_period = "Aug. 2017 - Aug. 2022"
+exp_5_place = "Buenos Aires, Argentina"
+exp_5_keypoints = [
                 "Assigned to 100+ students, answering queries and grading assignments. Rated as \"Very helpful\" or \"Excellent\" by 96% of students.",
                 "Aided professors in examinations and course administration. Gave several practical lectures, developing new material for grasping difficult concepts.",
                 "Syllabus: Pressurized pipe flow, pump selection, water hammer, open channel flow, weir and culvert design."
@@ -135,53 +146,53 @@ edu_2_grad_date = "Graduated 2018"
 
 
 # Projects info
-proj_1_title = "Test elaboration on Pandas to evaluate candidates for different roles"
+proj_1_title = "Test Elaboration on Pandas to Evaluate Candidates for Different Roles"
 proj_1_link = "https://www.testgorilla.com/test-library/programming-skills-tests/pandas-test/"
 proj_1_keypoints = [
                 "Created 50 scenario-based questions on Pandas, designed to test the situational judgement of the candidates. Reviewed and corrected 50+ previous questions made by another expert." 
                 ]
 
-proj_2_title = "EDA on Argentine lakes and reservoirs dataset"
-proj_2_link = "ajossorioarana.github.io"
+proj_2_title = "EDA on Argentine Lakes and Reservoirs dataset"
+proj_2_link = ""
 proj_2_keypoints = [
                 "Obtained Carlson's trophic state index (TSI) for waterbodies in dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication."
                 ]
 
-proj_3_title = "EDA on Cal Newport's Podcast "
-proj_3_link = "ajossorioarana.github.io"
+proj_3_title = "Python-Generated Resume"
+proj_3_link = "github.com/ajossorioarana/AJOA_resume"
 proj_3_keypoints = [
-                "Using Spotify API, obtained data from podcast and analyzed many variables, such as terms occurence, episode length and weekday of release."
+                "Using FPDF library, created the present resume entirely with Python."
                 ]
 
 # Skills info
 skills_1_title = "Python"
-skills_1_description = "Pandas, scikit-learn, GeoPandas, NumPy, Request, Matplotlib, Seaborn"
+skills_1_description = "pandas, numpy, scikit-learn, geopandas, request, matplotlib, seaborn"
 
 skills_2_title = "Data-related tools"
 skills_2_description = "Git, SQL, PostgreSQL"
 
 skills_3_title = "GIS and Remote Sensing"
-skills_3_description = "QGIS, Vector & raster data, DEM, Watershed delineation"
+skills_3_description = "QGIS, Vector & Raster Data, DEM, Watershed Delineation"
 
 skills_4_title = "Maths"
 skills_4_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
 
 skills_5_title = "Ecohydrology & Freshwater Ecosystems"
-skills_5_description = "Water balance, Hydrograms, Eutrophication, Nutrient budgeting, Lake management"
+skills_5_description = "Water Balance, Hydrograms, Eutrophication, Nutrient Budgeting, Lake Management"
 
 # Other activities
-activities_description = "Soccer, Fly fishing, Hiking, Skiing, Camping, Reading, Cooking, Playing guitar, Amateur radio"
+activities_description = "Fly Fishing, Amateur Radio, Reading, Cooking, Traditional Folk Music, Guitar, Soccer, Skiing"
         
 # Creates an instance of FPDF class and sets its title and author
 pdf = FPDF(orientation='P', unit='mm', format='A4')
-pdf.set_title('Resumé AJOA')
+pdf.set_title('Resume AJOA')
 pdf.set_author('Arturo J. Ossorio Arana')
 
 # Adds fonts relevant to the document
-pdf.add_font("Ubuntu Light", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Light.ttf", uni=True)
-pdf.add_font("Ubuntu Light", "I", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Light.ttf", uni=True)
-pdf.add_font("Ubuntu Medium", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Medium.ttf", uni=True)
-pdf.add_font("Ubuntu Bold", "", r"C:\Users\aoa91\AppData\Local\Microsoft\Windows\Fonts\Ubuntu-Bold.ttf", uni=True)
+pdf.add_font("Ubuntu Light", "", r"C:\Windows\Fonts\Ubuntu-L.ttf", uni=True)
+pdf.add_font("Ubuntu Light", "I", r"C:\Windows\Fonts\Ubuntu-LI.ttf", uni=True)
+pdf.add_font("Ubuntu Medium", "", r"C:\Windows\Fonts\Ubuntu-M.ttf", uni=True)
+pdf.add_font("Ubuntu Bold", "", r"C:\Windows\Fonts\Ubuntu-B.ttf", uni=True)
 
 # Adds page and sets auto page break
 pdf.add_page()
@@ -212,8 +223,8 @@ pdf.set_font("Ubuntu Medium", "", 8)
 pdf.set_text_color(0, 25, 100)
 pdf.write(h=h_cells, txt=mail, link=mail)
 pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
-pdf.write(h=h_cells, txt=website, link=website)
-pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
+#pdf.write(h=h_cells, txt=website, link=website)
+#pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=linkedin, link=linkedin)
 pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=cellphone)
