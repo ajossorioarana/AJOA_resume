@@ -86,9 +86,9 @@ exp_1_company_link = "https://hkanalytics.io/"
 exp_1_period = "Jun. 2022 - Present"
 exp_1_place = "Freelancer (through Upwork)"
 exp_1_keypoints = [
-                "Consistently delivered limnological reports of client's water bodies, preventively identifying negative trends in key water quality parameters and evaluating possible solutions",
-                "Revamped reporting process, decreasing total delivery time by 45% while decreasing errors.",
-                "Performed analysis on water data, identifying regional and seasonal differences in key variables as well as potential correlation between lake, watershed and limnological parameters."
+                "Contributed to develop codebase for photovoltaic (solar) plant analisys project.",
+                "Experience with data libraries (pandas, numpy), data visualization libraries (matplotlib, plotly), pipenv and git.",
+                "Worked as a freelancer in an autonomous manner, with regular meetings to plan weekly development plan."
                 ]
 
 exp_2_role = "Limnologist | Data Analyst"
