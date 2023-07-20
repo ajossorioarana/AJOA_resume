@@ -68,27 +68,27 @@ def write_activities(description: str, width: int, height: int):
 
 # Contact and general info
 name = "Arturo J. Ossorio Arana"
-role = "Ecohydrologist | Data Scientist"
+role = "Ecohydrologist | Data Analyst"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
 cellphone = "+54 9 113 636 8323"
 linkedin = "linkedin.com/in/ajossorioarana"
-#github = "github.com/ajossorioarana"
+github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
 
-description = "I love building things, tinkering with new tools, and learning new concepts. I find the process of dissecting a problem, analyzing the different components and evaluate possible solutions (with its trade-offs) extremely stimulating, especially when tackling complex, cross-functional problems with tangible outcomes.\nLooking for new challenges within the data spectrum. Particularly interested in the intersection between data science and ecohydrology or freshwater issues."
+description = "I love building things, tinkering with new tools, and learning new concepts. I find the process of dissecting a problem, analyzing the different components, and evaluating possible solutions (with their trade-offs) extremely stimulating, especially when tackling complex, cross-functional problems with tangible outcomes.\nLooking for new challenges within the data spectrum. Particularly interested in the intersection between data science and ecohydrology or freshwater issues."
 
 # Experience info
 exp_1_role = "Python Programmer | Data Analyst"
-exp_1_company = "HK Analytics"
-exp_1_company_link = "https://hkanalytics.io/"
+exp_1_company = "Confidential client"
+exp_1_company_link = "https://www.upwork.com/"
 exp_1_period = "Jun. 2022 - Present"
 exp_1_place = "Freelancer (through Upwork)"
 exp_1_keypoints = [
-                "Contributed to develop codebase for photovoltaic (solar) plant analisys project.",
-                "Experience with data libraries (pandas, numpy), data visualization libraries (matplotlib, plotly), pipenv and git.",
-                "Worked as a freelancer in an autonomous manner, with regular meetings to plan weekly development plan."
+                "Contributed to the development of the codebase for photovoltaic (solar) plant data science project.",
+                "Worked daily with data libraries (pandas, numpy), data visualization libraries (matplotlib, plotly), virtual environments (pipenv) and version control (git).",
+                "Worked as a freelancer in an autonomous manner, with regular meetings to plan development efforts, assess results, and collaborate with each other's hurdles."
                 ]
 
 exp_2_role = "Limnologist | Data Analyst"
@@ -136,49 +136,55 @@ exp_5_keypoints = [
                 ]
 
 # Education info
-edu_1_title = "MSc., Ecohydrology (Part-time)"
+edu_1_title = "M.Sc., Ecohydrology (Part-time)"
 edu_1_place = "Universidad Nacional de la Plata (UNLP)"
-edu_1_grad_date = "Thesis pending\nExpected Graduation Date: 2023"
+edu_1_grad_date = "Thesis pending"
 
-edu_2_title = "BEng. + MEng, Civil Engineer"
+edu_2_title = "B.Eng. + M.Eng, Civil Engineer"
 edu_2_place = "Universidad de Buenos Aires (UBA)"
 edu_2_grad_date = "Graduated 2018"
 
 
 # Projects info
-proj_1_title = "Test Elaboration on Pandas to Evaluate Candidates for Different Roles"
-proj_1_link = "https://www.testgorilla.com/test-library/programming-skills-tests/pandas-test/"
+proj_1_title = "Analysis of Trophic State of 103 Argentinian Lakes and Reservoirs"
+proj_1_link = "https://ajossorioarana.github.io/projects/arg_lakes/"
 proj_1_keypoints = [
+                "Analyzed the distribution of amateur radio licenses across Argentina and cross-referenced it with other variables to uncover the reasons behind this distribution."
+                ]
+
+proj_2_title = "EDA in Amateur Radio Licenses Numbers Across Argentina"
+proj_2_link = ""
+proj_2_keypoints = [
+                "Obtained Carlson's trophic state index (TSI) for water bodies in a dataset of Argentine lakes and reservoirs. Analyzed the differences between natural and man-made water bodies and the role of latitude and depth in eutrophication."
+                ]
+
+proj_3_title = "Test Elaboration on Pandas to Evaluate Candidates for Different Roles"
+proj_3_link = "https://www.testgorilla.com/test-library/programming-skills-tests/pandas-test/"
+proj_3_keypoints = [
                 "Created 50 scenario-based questions on Pandas, designed to test the situational judgement of the candidates. Reviewed and corrected 50+ previous questions made by another expert." 
                 ]
 
-proj_2_title = "EDA on Argentine Lakes and Reservoirs dataset"
-proj_2_link = ""
-proj_2_keypoints = [
-                "Obtained Carlson's trophic state index (TSI) for waterbodies in dataset of Argentine lakes and reservoirs. Analyzed differences between natural and man-made waterbodies and the role of latitude and depth in eutrophication."
-                ]
-
-proj_3_title = "Python-Generated Resume"
-proj_3_link = "github.com/ajossorioarana/AJOA_resume"
-proj_3_keypoints = [
+proj_4_title = "Python-Generated Resume"
+proj_4_link = "github.com/ajossorioarana/AJOA_resume"
+proj_4_keypoints = [
                 "Using FPDF library, created the present resume entirely with Python."
                 ]
 
 # Skills info
-skills_1_title = "Python"
-skills_1_description = "pandas, numpy, scikit-learn, geopandas, request, matplotlib, seaborn"
+skills_1_title = "Programming and Databases"
+skills_1_description = "Python, version control (git, gitlab, github), virtual environments, SQL"
 
-skills_2_title = "Data-related tools"
-skills_2_description = "Git, SQL, PostgreSQL"
+skills_2_title = "Data Analysis and Visualizations"
+skills_2_description = "pandas, numpy, scipy, geopandas, plotly, matplotlib, seaborn"
 
 skills_3_title = "GIS and Remote Sensing"
-skills_3_description = "QGIS, Vector & Raster Data, DEM, Watershed Delineation"
+skills_3_description = "QGIS, Vector & raster data, DEM, Watershed delineation"
 
-skills_4_title = "Maths"
-skills_4_description = "Probability, Statistics, Combinatorics, Linear Algebra, Calculus"
+skills_4_title = "Ecohydrology & Freshwater Ecosystems"
+skills_4_description = "Water cycle, Water balance, Hydrograms, Eutrophication, Nutrient budgeting, Lake management"
 
-skills_5_title = "Ecohydrology & Freshwater Ecosystems"
-skills_5_description = "Water Balance, Hydrograms, Eutrophication, Nutrient Budgeting, Lake Management"
+skills_5_title = "Maths"
+skills_5_description = "Linear Algebra, Calculus, Probability, Statistics, Combinatorics"
 
 # Other activities
 activities_description = "Fly Fishing, Amateur Radio, Reading, Cooking, Traditional Folk Music, Guitar, Soccer, Skiing"
@@ -223,8 +229,8 @@ pdf.set_font("Ubuntu Medium", "", 8)
 pdf.set_text_color(0, 25, 100)
 pdf.write(h=h_cells, txt=mail, link=mail)
 pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
-#pdf.write(h=h_cells, txt=website, link=website)
-#pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
+pdf.write(h=h_cells, txt=website, link=website)
+pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=linkedin, link=linkedin)
 pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=cellphone)
@@ -272,6 +278,7 @@ write_header("PROJECTS/PUBLICATIONS", col2_width, h_cells)
 write_project(proj_1_title, proj_1_keypoints, proj_1_link, col2_width, h_cells, col2_start)
 write_project(proj_2_title, proj_2_keypoints, proj_2_link, col2_width, h_cells, col2_start)
 write_project(proj_3_title, proj_3_keypoints, proj_3_link, col2_width, h_cells, col2_start)
+#write_project(proj_4_title, proj_4_keypoints, proj_4_link, col2_width, h_cells, col2_start)
 
 
 # Write line that separates columns
