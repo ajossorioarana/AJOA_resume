@@ -72,7 +72,6 @@ role = "Ecohydrologist | Data Analyst"
 city = "San Martín de los Andes"
 prov_country = "Neuquén, Argentina"
 mail = "arturoa91@gmail.com"
-cellphone = "+54 9 113 636 8323"
 linkedin = "linkedin.com/in/ajossorioarana"
 github = "github.com/ajossorioarana"
 website = "ajossorioarana.github.io"
@@ -81,10 +80,10 @@ description = "I love building things, tinkering with new tools, and learning ne
 
 # Experience info
 exp_1_role = "Python Programmer | Data Analyst"
-exp_1_company = "Confidential client"
-exp_1_company_link = "https://www.upwork.com/"
-exp_1_period = "Jun. 2022 - Present"
-exp_1_place = "Freelancer (through Upwork)"
+exp_1_company = "HK Analytics"
+exp_1_company_link = "https://hkanalytics.io/"
+exp_1_period = "Jun. 2022 - Aug. 2023"
+exp_1_place = "Remote (Freelancer) - Part-Time"
 exp_1_keypoints = [
                 "Contributed to the development of the codebase for photovoltaic (solar) plant data science project.",
                 "Worked daily with data libraries (pandas, numpy), data visualization libraries (matplotlib, plotly), virtual environments (pipenv) and version control (git).",
@@ -95,7 +94,7 @@ exp_2_role = "Limnologist | Data Analyst"
 exp_2_company = "EcoAqua"
 exp_2_company_link = "https://ecoaqua.com.ar/"
 exp_2_period = "Mar. 2021 - Present"
-exp_2_place = "Argentina (Remote)"
+exp_2_place = "Argentina (Remote) - Part-Time"
 exp_2_keypoints = [
                 "Consistently delivered limnological reports of client's water bodies, preventively identifying negative trends in key water quality parameters and evaluating possible solutions",
                 "Revamped reporting process, decreasing total delivery time by 45% while decreasing errors.",
@@ -136,7 +135,7 @@ exp_5_keypoints = [
                 ]
 
 # Education info
-edu_1_title = "M.Sc., Ecohydrology (Part-time)"
+edu_1_title = "M.Sc., Ecohydrology (Part-Time)"
 edu_1_place = "Universidad Nacional de la Plata (UNLP)"
 edu_1_grad_date = "Thesis pending"
 
@@ -149,13 +148,13 @@ edu_2_grad_date = "Graduated 2018"
 proj_1_title = "Analysis of Trophic State of 103 Argentinian Lakes and Reservoirs"
 proj_1_link = "https://ajossorioarana.github.io/projects/arg_lakes/"
 proj_1_keypoints = [
-                "Analyzed the distribution of amateur radio licenses across Argentina and cross-referenced it with other variables to uncover the reasons behind this distribution."
+                "Obtained Carlson's trophic state index (TSI) for water bodies in a dataset of Argentine lakes and reservoirs. Analyzed the differences between natural and man-made water bodies and the role of latitude and depth in eutrophication."
                 ]
 
 proj_2_title = "EDA in Amateur Radio Licenses Numbers Across Argentina"
-proj_2_link = ""
+proj_2_link = "https://ajossorioarana.github.io/projects/ham_eda/"
 proj_2_keypoints = [
-                "Obtained Carlson's trophic state index (TSI) for water bodies in a dataset of Argentine lakes and reservoirs. Analyzed the differences between natural and man-made water bodies and the role of latitude and depth in eutrophication."
+                "Analyzed the distribution of amateur radio licenses across Argentina and cross-referenced it with other variables to uncover the reasons behind this distribution."
                 ]
 
 proj_3_title = "Test Elaboration on Pandas to Evaluate Candidates for Different Roles"
@@ -232,8 +231,6 @@ pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=website, link=website)
 pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
 pdf.write(h=h_cells, txt=linkedin, link=linkedin)
-pdf.write(h=h_cells, txt=(" "*3 + "|" + " "*3))
-pdf.write(h=h_cells, txt=cellphone)
 pdf.ln(10)
 
 ybefore = pdf.get_y() # Save the top coordinate of the columns
